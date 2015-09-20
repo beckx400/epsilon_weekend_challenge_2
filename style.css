@@ -1,0 +1,33 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
+body{
+	font-family: "Roboto", sans-serif;
+	background: #487548;
+	color: white;
+}
+h3{
+	font-size: 40px;
+	margin: 20px 0;
+}
+.center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	width: 60%;
+}
+
+input[type="submit"]{
+	display:inline;
+	font-family: "Roboto", sans-serif;
+}
+
+.myInputs, form{
+	display:inline;
+}
+
+.container{
+  width: 70%;
+  text-align: center;
+}
+
