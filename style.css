@@ -33,8 +33,14 @@ input[type="submit"]{
 .watch {
 	font-size: 20px;
 }
+.red, .blue {
+	font-weight: 700;
+	letter-spacing: 2px;
+}
 .red {
 	color: red;
-	font-weight: bold;
+}
+.blue{
+	color: #0099FF;
 }
 
