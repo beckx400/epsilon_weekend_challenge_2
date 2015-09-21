@@ -30,4 +30,11 @@ input[type="submit"]{
   width: 70%;
   text-align: center;
 }
+.watch {
+	font-size: 20px;
+}
+.red {
+	color: red;
+	font-weight: bold;
+}
 

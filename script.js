@@ -3,13 +3,21 @@ $(document).ready(function() {
 		function searchCallback(results) {
 			console.log(results);
 			var errorMessage = "<div><h3>Sorry! Your search wasn't found...</h3></div>"
-			var appendMessage = "<div><h3>" + results.Title + "</h3><p>" + results.Plot + "</p></div>";
+			var metaScore = "";
+
+			if(parseInt(results.Metascore)>= 60){
+				metaScore = "<p class='watch'>You should watch this movie!</p>";
+			} else {
+				metaScore = "<p class='watch red' >This movie isn't worth your time...</p>";
+			}
+
+			var appendMessage = "<div><h3>" + results.Title + "</h3><p>" + results.Plot + "</p><br>" + metaScore + "</div>";
 
 			if(results.Title === undefined){
 				$('.movie-info').html(errorMessage);
 			} else {
-		    $('.movie-info').slideDown().html(appendMessage);
-		}
+		    $('.movie-info').html(appendMessage);
+			}
 		}
 
 		$("form").on("submit", function(event){
